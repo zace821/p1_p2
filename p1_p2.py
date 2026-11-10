@@ -57,9 +57,9 @@ while player.hp > 0:
     
     if monster.hp <= 0:
         print(f"{monster.name} slakdagd")
-    move = input("   Vill du?\n1) attackera\n2) Hoppa över din attackrunda för att få 2 Mana: ")
+    move = int(input("   Vill du?\n1) attackera\n2) Hoppa över din attackrunda för att få 2 Mana: "))
     if move == 1:
-        attack_type = input("   Vill du: \n1) Basic attack\n2) advance attack(-3 mana)")
+        attack_type = int(input("   Vill du: \n1) Basic attack\n2) advance attack(-3 mana)"))
         if attack_type == 1:
             player.mana += 1
             player.voice_line()
